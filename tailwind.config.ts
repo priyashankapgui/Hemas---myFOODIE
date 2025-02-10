@@ -1,5 +1,6 @@
 import type { Config } from "tailwindcss";
 
+
 const config: Config = {
 	darkMode: ["class"],
 	content: [
@@ -17,11 +18,16 @@ const config: Config = {
 		},
 		extend: {
 			fontFamily: {
-				roboto: ['Roboto', 'sans-serif'],
-				inter: ['Inter-Regular', 'sans-serif'],
-				interSemibold: ['Inter-Semibold', 'sans-serif'],
-				interBold: ['Inter-Bold', 'sans-serif'],
-			},
+				nunito: ['Nunito', 'sans-serif'],
+			  },
+			  fontWeight: {
+				'light': '300',
+				'regular': '400',
+				'medium': '500',
+				'semibold': '600',
+				'bold': '700',
+				'extrabold': '800',
+			  },
 			spacing: {
 				"128": "32rem",
 				"144": "36rem",
@@ -144,9 +150,24 @@ const config: Config = {
 					800: "#C19117",
 					900: "#A9811C",
 				},
+				theme_green: {
+					'50': '#f5faf3',
+					'100': '#e8f5e3',
+					'200': '#d1eac8',
+					'300': '#acd99c',
+					'400': '#7ebf69',
+					'500': '#69b550',
+					'600': '#488534',
+					'700': '#3b692c',
+					'800': '#325427',
+					'900': '#294621',
+					'950': '#13250e',			
+				}
 			},
+			
 
 		},
+		
 	},
 	plugins: [require("tailwindcss-animate")],
 };

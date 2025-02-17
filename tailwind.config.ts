@@ -7,6 +7,8 @@ const config: Config = {
 		"./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
 		"./src/components/**/*.{js,ts,jsx,tsx,mdx}",
 		"./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+		"./src/section/**/*.{js,ts,jsx,tsx,mdx}",
+		"./src/**/*.{js,ts,jsx,tsx,mdx}",
 	],
 	theme: {
 		container: {
@@ -58,6 +60,7 @@ const config: Config = {
 					700: "#2A2A2A",
 					800: "#1C1C1C",
 					900: "#0D0D0D",
+					950 : "#D9D9D9",
 				},
 				gray_light: {
 					25: "#FCFCFC",
@@ -160,9 +163,11 @@ const config: Config = {
 					'600': '#488534',
 					'700': '#3b692c',
 					'800': '#325427',
+					'870': '#1E3715',
 					'900': '#294621',
 					'950': '#13250e',			
-				}
+				},
+				
 			},
 			
 

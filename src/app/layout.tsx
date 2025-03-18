@@ -1,53 +1,5 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
 import "./globals.css";
-
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
-
-const nunito = localFont({
-  src: [
-    {
-      path: "./fonts/Nunito-Light.ttf", // Light weight
-      weight: "300", 
-      style: "normal",
-    },
-    {
-      path: "./fonts/Nunito-Regular.ttf", // Regular weight
-      weight: "400", 
-      style: "normal",
-    },
-    {
-      path: "./fonts/Nunito-Medium.ttf", // Medium weight
-      weight: "500", 
-      style: "normal",
-    },
-    {
-      path: "./fonts/Nunito-SemiBold.ttf", // Semi-Bold weight
-      weight: "600", 
-      style: "normal",
-    },
-    {
-      path: "./fonts/Nunito-Bold.ttf", // Bold weight
-      weight: "700", 
-      style: "normal",
-    },
-    {
-      path: "./fonts/Nunito-ExtraBold.ttf", // Extra-Bold weight
-      weight: "800", 
-      style: "normal",
-    },
-  ],
-  variable: "--font-nunito", // Variable name for CSS custom property
-});
 
 
 
@@ -65,12 +17,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <header>
 
-      </header>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased  ${nunito.variable}`}
       >
+
+        <header>
+
+        </header>
         {children}
       </body>
     </html>

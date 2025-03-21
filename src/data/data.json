@@ -1,0 +1,32 @@
+[
+    {
+      "foodName": "Seafood Noodles",
+      "foodPrice": "198.00",
+      "foodImgURL": "/images/seafood-noodles.jpg"
+    },
+    {
+      "foodName": "Grilled Chicken Pasta",
+      "foodPrice": "150.00",
+      "foodImgURL": "/images/chicken-pasta.jpg"
+    },
+    {
+      "foodName": "Rice And Curry",
+      "foodPrice": "120.00",
+      "foodImgURL": "/images/riceandcurry.webp"
+    },
+    {
+        "foodName": "Spicy Seasoned Seafood Noodles",
+        "foodPrice": "198.00",
+        "foodImgURL": "/images/seafood-noodles.jpg"
+      },
+      {
+        "foodName": "Grilled Chicken Pasta",
+        "foodPrice": "150.00",
+        "foodImgURL": "/images/chicken-pasta.jpg"
+      },
+      {
+        "foodName": "Rice And Curry",
+        "foodPrice": "120.00",
+        "foodImgURL": "/images/riceandcurry.webp"
+      }
+  ]

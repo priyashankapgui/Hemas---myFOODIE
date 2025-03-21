@@ -20,7 +20,7 @@ const config: Config = {
 		},
 		extend: {
 			fontFamily: {
-				nunito: ['Nunito', 'sans-serif'],
+				nunito: ['Nunito', 'sans-serif', 'ui-sans-serif', 'system-ui'],
 			  },
 			  fontWeight: {
 				'light': '300',
@@ -155,7 +155,9 @@ const config: Config = {
 				},
 				theme_green: {
 					'50': '#f5faf3',
+					'75': '#f2fdee',
 					'100': '#e8f5e3',
+					'150': '#D0E4C9',
 					'200': '#d1eac8',
 					'300': '#acd99c',
 					'400': '#7ebf69',

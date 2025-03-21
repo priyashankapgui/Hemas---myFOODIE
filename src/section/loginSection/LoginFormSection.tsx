@@ -11,7 +11,7 @@ const LoginFormSection = () => {
 
     // Handle Submit function
     const onSubmit = (e: React.FormEvent) => {
-        e.preventDefault();  // Prevent page reload
+        e.preventDefault();  
         const formData = {
             username,
             password,
@@ -43,7 +43,7 @@ const LoginFormSection = () => {
                 </div>
                 <div className="items-start w-full space-y-4">
                     <h2 className="text-3xl font-semibold text-black">Get Started</h2>
-                    <p className="text-xl font-extralight text-black italic ">Welcome to myFOODIE - Let’s taste your meal</p>
+                    <p className="text-xl font-extralight text-black italic ">Welcome to myFOODIE - Let&apos;s taste your meal</p>
                     <div className="w-full h-0.5 bg-gray-950 my-6" />
                 </div>
                

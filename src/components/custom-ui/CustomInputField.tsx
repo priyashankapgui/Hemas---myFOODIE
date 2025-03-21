@@ -11,6 +11,7 @@ interface CustomInputFieldProps extends React.ComponentProps<"input"> {
   icon?: React.ReactNode 
   width?: string 
   ariaLabel?: string 
+  type?: string
 }
 
 const CustomInputField = React.forwardRef<HTMLInputElement, CustomInputFieldProps>(
@@ -22,7 +23,7 @@ const CustomInputField = React.forwardRef<HTMLInputElement, CustomInputFieldProp
       setShowPassword((prev) => !prev)
     }
 
-    // Check if onChange is provided, otherwise log an error or make the field read-only.
+  
     if (value !== undefined && onChange === undefined) {
       console.error("You provided a `value` prop to the input without an `onChange` handler, making it a read-only field.");
     }
@@ -38,7 +39,7 @@ const CustomInputField = React.forwardRef<HTMLInputElement, CustomInputFieldProp
           id={props.id}
           type={inputType}
           value={value}
-          onChange={onChange} // Make sure onChange is passed down properly
+          onChange={onChange} 
           placeholder={props.placeholder}
           aria-label={ariaLabel}
           className={cn(
